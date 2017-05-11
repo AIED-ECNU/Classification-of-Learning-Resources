@@ -48,20 +48,26 @@ import tensorflow as tf
 #    return filename
 
 #filename = maybe_download('text8.zip', 31344016)
-filename = "text9.zip"
-#
+filename = "text8"
+#文档路径改一下
 # Read the data into a list of strings.读文本，输出单词数Data size 17005207
+# def read_data(filename):
+#   """Extract the first file enclosed in a zip file as a list of words."""
+#   with zipfile.ZipFile(filename) as f:
+#     data = tf.compat.as_str(f.read(f.namelist()[0])).split()
+#   return data
 def read_data(filename):
-  """Extract the first file enclosed in a zip file as a list of words."""
-  with zipfile.ZipFile(filename) as f:
-    data = tf.compat.as_str(f.read(f.namelist()[0])).split()
-  return data
-
+   """Extract the first file enclosed in a zip file as a list of words."""
+   with open(filename) as f:
+     for line in f:
+        data = line.split()
+   return data
 
 vocabulary = read_data(filename)
 print('Data size', len(vocabulary))
 
-# Step 2: Build the dictionary and replace rare words with UNK token.建立词典，代替稀有的词语用UNK记号，UNK(也就是unknown单词，即词频率少于一定数量的稀有词的代号)
+# Step 2: Build the dictionary and replace rare words with UNK token.
+# 建立词典，代替稀有的词语用UNK记号，UNK(也就是unknown单词，即词频率少于一定数量的稀有词的代号)
 #限制了这个demo可以学习一共50000个不同的单词
 vocabulary_size = 50000
 
@@ -99,37 +105,43 @@ print('Most common words (+UNK)', count[:5])#包括UNK的前五个
 ##Sample data [5237, 3081, 12, 6, 195, 2, 3134, 46, 59, 156] ['anarchism', 'originated', 'as', 'a', 'term', 'of', 'abuse', 'first', 'used', 'against']
 print('Sample data', data[:16], [reverse_dictionary[i] for i in data[:16]])
 ##data从文本第一个词顺序进行
+
+
 data_index = 0
-
-
 # Step 3: Function to generate a training batch for the skip-gram model.训练函数
 def generate_batch(batch_size, num_skips, skip_window):
   global data_index
+  ##断言assert表示如果后面表达式为假，抛出错误；如果为真，继续执行
   assert batch_size % num_skips == 0
   assert num_skips <= 2 * skip_window
+  ##创建一个ndarray对象，shape是数组形状，dtype是数组中元素类型；batch是一行，labels是1列
   batch = np.ndarray(shape=(batch_size), dtype=np.int32)
   labels = np.ndarray(shape=(batch_size, 1), dtype=np.int32)
   span = 2 * skip_window + 1  # [ skip_window target skip_window ]
+  ##规定双向序列deque最大长度为span
   buffer = collections.deque(maxlen=span)
-  for _ in range(span):
-    buffer.append(data[data_index])
+  for _ in range(span):#循环span次
+    buffer.append(data[data_index])##buffer应该是[5237, 3081, 12, 6, 195, 2, 3134, 46, 59, 156] 的数据，代表文本第一个按出现次数进行排位的第几位
     data_index = (data_index + 1) % len(data)
-  for i in range(batch_size // num_skips):
+  for i in range(batch_size // num_skips):#循环batch_size // num_skips次
     target = skip_window  # target label at the center of the buffer
     targets_to_avoid = [skip_window]
     for j in range(num_skips):
       while target in targets_to_avoid:
+        ##随机取（0,1,2）中一个数，对应label单词，即一个单词附近的单词，但不会没取到自己，因为如果还是1 就会再取随机数，直到取到不是1 的数
         target = random.randint(0, span - 1)
-      targets_to_avoid.append(target)
+      targets_to_avoid.append(target) ##targets_to_avoid可以重复，比如[1,0,1,1]
       batch[i * num_skips + j] = buffer[skip_window]
+      ##一直都是buffer[1]，但是buffer是个双向序列，可以不断变化，i=0 时，buffer=【50, 3272, 11】。i=1 时，buffer=【3272, 11，6】往后推了一个
       labels[i * num_skips + j, 0] = buffer[target]
     buffer.append(data[data_index])
     data_index = (data_index + 1) % len(data)
   # Backtrack a little bit to avoid skipping words in the end of a batch
   data_index = (data_index + len(data) - span) % len(data)
   return batch, labels
-
+##调用函数，参数为8，2，1
 batch, labels = generate_batch(batch_size=8, num_skips=2, skip_window=1)
+##batch_size表示输出多少行，num_skips表示一个词出现几次，skip_window表示从skip_window+1个单词开始
 for i in range(8):
   print(batch[i], reverse_dictionary[batch[i]],
         '->', labels[i, 0], reverse_dictionary[labels[i, 0]])
@@ -137,33 +149,37 @@ for i in range(8):
 # Step 4: Build and train a skip-gram model.建立模型
 
 batch_size = 128
-embedding_size = 128  # Dimension of the embedding vector.
+embedding_size = 128  # Dimension of the embedding vector.128维向量表示单词
 skip_window = 1       # How many words to consider left and right.
 num_skips = 2         # How many times to reuse an input to generate a label.
 
 # We pick a random validation set to sample nearest neighbors. Here we limit the
 # validation samples to the words that have a low numeric ID, which by
 # construction are also the most frequent.
-valid_size = 16     # Random set of words to evaluate similarity on.
+valid_size = 16     # Random set of words to evaluate similarity on.随机的16个单词
 valid_window = 100  # Only pick dev samples in the head of the distribution.
+##从100个取16个不重复的。
 valid_examples = np.random.choice(valid_window, valid_size, replace=False)
 num_sampled = 64    # Number of negative examples to sample.
 
 graph = tf.Graph()
-
+##tf.Graph类表示可计算的图
 with graph.as_default():
 
   # Input data.
+  #### tf.placeholder：占位符，由后面的feed_dict 参数指定
   train_inputs = tf.placeholder(tf.int32, shape=[batch_size])
   train_labels = tf.placeholder(tf.int32, shape=[batch_size, 1])
   valid_dataset = tf.constant(valid_examples, dtype=tf.int32)
-
+ #tf.constant(value,dtype=None,shape=None,name='Const')创建一个常量tensor，先给出value，可以设定其shape
   # Ops and variables pinned to the CPU because of missing GPU implementation
   with tf.device('/cpu:0'):
     # Look up embeddings for inputs.
     embeddings = tf.Variable(
         tf.random_uniform([vocabulary_size, embedding_size], -1.0, 1.0))
-    embed = tf.nn.embedding_lookup(embeddings, train_inputs)
+    #vocabulary_size=50000,embedding_size=128;
+    ##tf.random_uniform(shape,minval=0,maxval=None,dtype=tf.float32,seed=None,name=None)返回一个形状为shape的tensor，其中的元素服从minval和maxval之间的均匀分布。
+    embed = tf.nn.embedding_lookup(embeddings, train_inputs)##在embeddings中检索train_inputs所要求的内容
 
     # Construct the variables for the NCE loss
     nce_weights = tf.Variable(
@@ -175,11 +191,11 @@ with graph.as_default():
   # tf.nce_loss automatically draws a new sample of the negative labels each
   # time we evaluate the loss.
   loss = tf.reduce_mean(
-      tf.nn.nce_loss(weights=nce_weights,
+      tf.nn.nce_loss(weights=nce_weights,#128维，50000个
                      biases=nce_biases,
                      labels=train_labels,
                      inputs=embed,
-                     num_sampled=num_sampled,
+                     num_sampled=num_sampled,###负样本？？？
                      num_classes=vocabulary_size))
 
   # Construct the SGD optimizer using a learning rate of 1.0.
@@ -187,12 +203,14 @@ with graph.as_default():
 
   # Compute the cosine similarity between minibatch examples and all embeddings.
   norm = tf.sqrt(tf.reduce_sum(tf.square(embeddings), 1, keep_dims=True))
+  ###'x' is [[1, 1, 1]
+  #         [1, 1, 1]]  tf.reduce_sum(x, 1, keep_dims=True) ==> [[3], [3]]
   normalized_embeddings = embeddings / norm
   valid_embeddings = tf.nn.embedding_lookup(
       normalized_embeddings, valid_dataset)
   similarity = tf.matmul(
       valid_embeddings, normalized_embeddings, transpose_b=True)
-
+#两个矩阵相乘
   # Add variable initializer.
   init = tf.global_variables_initializer()
 
@@ -209,28 +227,29 @@ with tf.Session(graph=graph) as session:
     batch_inputs, batch_labels = generate_batch(
         batch_size, num_skips, skip_window)
     feed_dict = {train_inputs: batch_inputs, train_labels: batch_labels}
-
+    #generate_batch用法:::batch, labels = generate_batch(batch_size=8, num_skips=2, skip_window=1)   ##batch_size表示输出多少行，num_skips表示一个词出现几次，skip_window表示从skip_window+1个单词开始
     # We perform one update step by evaluating the optimizer op (including it
     # in the list of returned values for session.run()
     _, loss_val = session.run([optimizer, loss], feed_dict=feed_dict)
     average_loss += loss_val
-
+##每2000一次
     if step % 2000 == 0:
       if step > 0:
         average_loss /= 2000
-      # The average loss is an estimate of the loss over the last 2000 batches.
+      # The average loss is an estimate of the loss over the last 2000 batches.上2000批的平均失败估测，随次数增多，值变小
       print('Average loss at step ', step, ': ', average_loss)
       average_loss = 0
 
     # Note that this is expensive (~20% slowdown if computed every 500 steps)
+    ##10000的整数倍时，输出nearest
     if step % 10000 == 0:
       sim = similarity.eval()
-      for i in xrange(valid_size):
+      for i in xrange(valid_size):#16
         valid_word = reverse_dictionary[valid_examples[i]]
         top_k = 8  # number of nearest neighbors
         nearest = (-sim[i, :]).argsort()[1:top_k + 1]
         log_str = 'Nearest to %s:' % valid_word
-        for k in xrange(top_k):
+        for k in xrange(top_k):##循环8 次
           close_word = reverse_dictionary[nearest[k]]
           log_str = '%s %s,' % (log_str, close_word)
         print(log_str)
