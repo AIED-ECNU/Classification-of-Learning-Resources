@@ -1,0 +1,250 @@
+学习率0.1---不好
+Data size 2423074
+Most common words (+UNK) [['UNK', 0], ('，', 187657), ('的', 183012), ('。', 78649), ('了', 43928)]
+Sample data [54, 979, 188, 3858, 871, 2, 12, 3, 23, 109] ['能', '开', '一门', '进阶', '版', '的', '课程', '。', ',', '感觉']
+979 开 -> 54 能
+979 开 -> 188 一门
+188 一门 -> 3858 进阶
+188 一门 -> 979 开
+3858 进阶 -> 871 版
+3858 进阶 -> 188 一门
+871 版 -> 3858 进阶
+871 版 -> 2 的
+2017-06-05 00:30:08.658201: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:30:09.165834: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:30:09.166252: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:30:09.166629: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:30:09.167005: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:30:09.167386: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:30:09.167839: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:30:09.168364: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+Initialized
+Average loss at step  0 :  267.289703369
+Nearest to ，: 提了, unnecessary, E, 巨木, 挤, 蹲, 不弱, 悠久,
+Nearest to 非常: 1995, uni, 即要, 先进, 帘幕, determined, 物体, 研究生院,
+Nearest to 而: 脚长, 歌里, 初步, 成微课, 绚丽多彩, 教完, ｓ, 应酬,
+Nearest to 要: 小分队, 罪过, excel, 十日, 列国志, 自得其乐, 科技事业, 上劲,
+Nearest to 学生: 苦尽甘来, 银盘, 嵌入, 活络, 讲求实效, 我门, reason, 深谙,
+Nearest to 的: 讲求实效, 骄人成绩, 四分, 不顺心, specialization, 队友, 太阳系, 凄凉,
+Nearest to .: 预估, 耳力, 江苏, 胃, 我往, MOOCer, 辍学, 孙凌,
+Nearest to “: Webqust, 以生, 抢先, 项目管理, 八百, 不假, 教学辅导, reason,
+Nearest to 中: 水过, mean, 国民素质, 前四堂, 老年人, 直角三角形, rainbows, 完虐,
+Nearest to \: 信息内容, 錢, 发脾气, club, 越用, 如山, 善以, 极智穷思,
+Nearest to 去: 发学, 受限, 牛哥, 习得, 毛骨悚然, 外别, 涕零, 免疫,
+Nearest to 我们: 建筑, Webquestg, 反省, 硝烟, 步行, 冗繁, 课叫, 念稿,
+Nearest to 教师: 园内, 低能儿, 张冠楚, 定时, Vectorization, 不喜, 单, 茬,
+Nearest to 更: 不拉下, 我悟, 古书, 三班, 阻力, idle, 趁热打铁, 大增,
+Nearest to 课堂: O2S, FICO, 我远, 中句, 太苦, 互生, 要花, 工夫,
+Nearest to webquest: 轨道, 瑞士人, 格外, 大学本科, 甜咸, 有悲, 方案, 十分关心,
+Average loss at step  2000 :  180.713269676
+Average loss at step  4000 :  105.233046771
+Average loss at step  6000 :  75.2828813963
+Average loss at step  8000 :  57.2554433661
+Average loss at step  10000 :  51.6635569408
+Nearest to ，: 的, 。, 很, 我, ,, 了, 是, \,
+Nearest to 非常: \, n, 说, r, 是, 有, 就, ！,
+Nearest to 而: 都, 自己, 课, \, 有, r, 会, 老师,
+Nearest to 要: r, n, 没有, 好, 这门, \, 课程, 在,
+Nearest to 学生: 对, 也, n, 讲, 都, \, 很, 好,
+Nearest to 的: ，, 。, 了, 很, 是, ,, 我, 都,
+Nearest to .: 但是, 有, 这门, \, 很, 内容, 老师, 、,
+Nearest to “: \, 都, 也, 课程, 有, 老师, n, 作业,
+Nearest to 中: 多, n, r, 课, 比较, 这门, 没有, 作业,
+Nearest to \: r, n, 课程, 老师, ,, 我, ！, 都,
+Nearest to 去: \, r, 有, 也, 好, ., 课程, 要,
+Nearest to 我们: 都, \, r, 、, 感觉, n, 老师, 课程,
+Nearest to 教师: 去, 这样, 和, 课程, r, \, 上, 也,
+Nearest to 更: \, 了, -, n, 好, 课程, 是, 看,
+Nearest to 课堂: 就是, \, 与, 简单, r, 不错, 课, 这个,
+Nearest to webquest: 轨道, 瑞士人, 格外, 大学本科, 甜咸, 有悲, 副, 十分关心,
+Average loss at step  12000 :  43.2954978409
+Average loss at step  14000 :  34.2453998828
+Average loss at step  16000 :  27.2072336748
+Average loss at step  18000 :  25.5560640442
+Average loss at step  20000 :  21.9935013487
+Nearest to ，: 的, 。, 了, 我, 是, 很, 、, ,,
+Nearest to 非常: \, n, 说, r, 看, 一些, -, 就,
+Nearest to 而: \, 都, 自己, r, 课, 会, n, 但是,
+Nearest to 要: r, n, 没有, 好, \, 这门, 知道, 会,
+Nearest to 学生: 对, \, n, 讲, 需要, 也, r, 都,
+Nearest to 的: ，, 。, 了, 很, 是, 和, 在, 我,
+Nearest to .: 但是, \, 这门, 内容, 有趣, 感觉, 有, 去,
+Nearest to “: \, 都, 课程, n, 也, 说, 有, 作业,
+Nearest to 中: 多, n, r, 课, 比较, 简单, 这门, \,
+Nearest to \: r, n, 课程, ,, ！, 老师, 对, 不过,
+Nearest to 去: \, r, 好, 对于, ., 要, 觉得, 教师,
+Nearest to 我们: \, 都, r, 感觉, 以后, 课程, 老师, n,
+Nearest to 教师: \, r, 这样, 课程, 去, 课, 也, 好,
+Nearest to 更: \, n, -, 好, 看, 课程, 完成, 有趣,
+Nearest to 课堂: \, 就是, r, 简单, 与, 活动, 感觉, 不错,
+Nearest to webquest: \, 课, 还, r, 设计, -, 完成, 也,
+Average loss at step  22000 :  31.2685225496
+Average loss at step  24000 :  17.2046677907
+Average loss at step  26000 :  17.106526377
+Average loss at step  28000 :  15.2324390159
+Average loss at step  30000 :  14.9949986248
+Nearest to ，: 。, 的, 了, 、, 是, 我, 很, 和,
+Nearest to 非常: \, n, 说, r, 看, -, 真的, 想,
+Nearest to 而: \, r, 课, 都, n, 但是, 自己, 操作,
+Nearest to 要: r, n, 没有, \, 好, 这门, 知道, 看,
+Nearest to 学生: \, 需要, 对, n, 讲, 能, 也, 为,
+Nearest to 的: ，, 。, 了, 和, 、, 在, 是, 很,
+Nearest to .: 但是, \, 这门, 有趣, 内容, 感觉, 去, r,
+Nearest to “: \, n, 说, 都, 课程, 多, 内容, 作业,
+Nearest to 中: 多, n, r, 比较, 简单, 这样, 课, \,
+Nearest to \: r, n, 课程, 不过, ,, 看, PPT, 很多,
+Nearest to 去: \, r, 对于, 好, 觉得, 最, 教师, 给,
+Nearest to 我们: 都, \, 以后, 感觉, 老师, 使用, r, 课程,
+Nearest to 教师: \, 这样, r, 课程, 去, 课, 不错, 不过,
+Nearest to 更: \, n, -, 看, 好, 完成, 有趣, 应用,
+Nearest to 课堂: \, 就是, r, 简单, 活动, 不错, 讲, 感觉,
+Nearest to webquest: \, 课, r, 还, 设计, -, 完成, 以后,
+Average loss at step  32000 :  14.8216219335
+Average loss at step  34000 :  14.3100375812
+Average loss at step  36000 :  13.5253838609
+Average loss at step  38000 :  13.8231719172
+Average loss at step  40000 :  21.6430294226
+Nearest to ，: 。, 的, 、, 了, 是, 和, 我, 很,
+Nearest to 非常: \, 说, n, r, 看, 真的, 利用, -,
+Nearest to 而: \, r, 操作, 但是, n, 课, 编程, 通过,
+Nearest to 要: r, n, 没有, \, 好, 知道, 这门, 看,
+Nearest to 学生: 需要, \, 讲, 能, n, 它, 对, 不错,
+Nearest to 的: ，, 。, 了, 和, 、, 在, 是, 很,
+Nearest to .: 但是, \, 有趣, 这门, 感觉, 内容, 去, r,
+Nearest to “: \, 说, 高, n, 丰富, 多, 内容, 给,
+Nearest to 中: 多, n, 简单, 这样, r, 比较, 课, 虽然,
+Nearest to \: r, n, 不过, PPT, 看, 技巧, 看到, 感觉,
+Nearest to 去: \, r, 对于, 最, 觉得, 好, 知道, 给,
+Nearest to 我们: 都, \, 以后, 使用, 感觉, 我, 学生, 老师,
+Nearest to 教师: 这样, \, r, 活动, 不错, 去, 不过, 课程,
+Nearest to 更: \, n, -, 看, 有趣, 应用, 完成, 好,
+Nearest to 课堂: \, 就是, 活动, r, 简单, 不错, 讲, 感觉,
+Nearest to webquest: \, r, 课, 设计, 还, -, 完成, 以后,
+Average loss at step  42000 :  19.497225576
+Average loss at step  44000 :  18.3714125123
+Average loss at step  46000 :  17.291592975
+Average loss at step  48000 :  18.0098216239
+Average loss at step  50000 :  13.3331836469
+Nearest to ，: 。, 的, 、, 是, 和, 了, 很, 我,
+Nearest to 非常: 说, \, n, r, 利用, 真的, 现代, 值得,
+Nearest to 而: r, 操作, \, 但是, 编程, webquest, ppt, 通过,
+Nearest to 要: r, n, 没有, 知道, 好, 像, 这门, 兴趣,
+Nearest to 学生: 需要, 它, 讲, 不错, 能, \, 一样, 为,
+Nearest to 的: ，, 。, 了, 和, 、, 在, 是, 很,
+Nearest to .: 但是, 有趣, \, 这门, 去, 感觉, 内容, 真的,
+Nearest to “: \, 高, 说, 丰富, 多, 英文, 要求, 一种,
+Nearest to 中: 多, 这样, 简单, r, n, 比较, 提高, 技术,
+Nearest to \: r, n, 不过, PPT, 技巧, 看到, 这样, 学案,
+Nearest to 去: r, \, 最, 而是, 教师, 觉得, 知道, 对于,
+Nearest to 我们: 都, \, 以后, 使用, 感觉, 学生, 我, 它,
+Nearest to 教师: 这样, \, r, 活动, 不错, Webquest, 不过, 以后,
+Nearest to 更: \, 有趣, 应用, n, 看, 完成, -, 想,
+Nearest to 课堂: \, 活动, r, 简单, 就是, 不错, 地方, 讲,
+Nearest to webquest: \, r, 设计, 以后, 课, 完成, 学到, 技巧,
+Average loss at step  52000 :  12.3410100696
+Average loss at step  54000 :  11.1220582143
+Average loss at step  56000 :  12.0258822134
+Average loss at step  58000 :  10.6473711666
+Average loss at step  60000 :  16.8987715788
+Nearest to ，: 。, 的, 、, 是, 和, 了, 很, 我,
+Nearest to 非常: 说, \, n, r, 利用, 真的, 值得, 现代,
+Nearest to 而: r, 操作, \, 编程, 初步, 但是, 要求, ppt,
+Nearest to 要: r, 没有, n, 知道, 像, 兴趣, 好, 会,
+Nearest to 学生: 需要, 它, 讲, 能, 不错, 我们, 他们, \,
+Nearest to 的: ，, 。, 了, 和, 、, 在, 是, 很,
+Nearest to .: 有趣, 但是, \, 这门, 感觉, 去, 才能, 不错,
+Nearest to “: \, 高, 丰富, 说, 多, 英文, 要求, 数学,
+Nearest to 中: 多, 这样, 简单, 提高, n, r, 比较, 如果,
+Nearest to \: r, n, 不过, 技巧, PPT, 看到, 这样, 学案,
+Nearest to 去: \, r, 而是, 最, 觉得, 实际, 知道, 对于,
+Nearest to 我们: 都, \, 我, 以后, 学生, 使用, 老师, 感觉,
+Nearest to 教师: 这样, \, r, 活动, 不错, Webquest, 不过, 历史,
+Nearest to 更: \, 有趣, 应用, n, 看, -, 完成, 想,
+Nearest to 课堂: \, 活动, r, 简单, 不错, 就是, 地方, 讲,
+Nearest to webquest: \, r, 设计, 以后, 技巧, 完成, 方案, 更好,
+Average loss at step  62000 :  9.24479496396
+Average loss at step  64000 :  9.88089328086
+Average loss at step  66000 :  8.97717830956
+Average loss at step  68000 :  9.18427024364
+Average loss at step  70000 :  9.37313072622
+Nearest to ，: 。, 的, 、, 是, 和, 很, 了, 在,
+Nearest to 非常: 说, \, n, r, 真的, 利用, 值得, 鼓励,
+Nearest to 而: r, 操作, 编程, \, 初步, 但是, 引入, 要求,
+Nearest to 要: r, 没有, n, 知道, 像, 会, 更是, 能,
+Nearest to 学生: 需要, 我们, 它, 他们, 不错, 能, 讲, \,
+Nearest to 的: ，, 和, 。, 了, 、, 在, 很, 是,
+Nearest to .: 有趣, 但是, \, 感觉, 这门, 去, 不错, 才能,
+Nearest to “: \, 高, 说, 丰富, 英文, 多, 数学, 要求,
+Nearest to 中: 多, 这样, 简单, n, 提高, r, 如果, 英语,
+Nearest to \: r, n, 不过, 技巧, PPT, 看到, 学案, 看,
+Nearest to 去: \, 而是, r, 最, 实际, 知道, 觉得, 一次,
+Nearest to 我们: 都, 我, \, 学生, 老师, 以后, 使用, 感觉,
+Nearest to 教师: 这样, \, r, 活动, 不错, Webquest, 不过, 历史,
+Nearest to 更: 有趣, 应用, \, 看, n, -, 完成, 想,
+Nearest to 课堂: \, 活动, r, 简单, 不错, 地方, 就是, 讲,
+Nearest to webquest: \, r, 方案, 技巧, 设计, 以后, 更好, 学到,
+Average loss at step  72000 :  9.39485796547
+Average loss at step  74000 :  9.01370752025
+Average loss at step  76000 :  9.87344135094
+Average loss at step  78000 :  14.8467823869
+Average loss at step  80000 :  13.6726453386
+Nearest to ，: 。, 的, 、, 是, 和, 很, ,, 我,
+Nearest to 非常: 说, n, \, 真的, r, 利用, 鼓励, 值得,
+Nearest to 而: 编程, 初步, 操作, r, 引入, 但是, 要求, \,
+Nearest to 要: 没有, r, n, 会, 像, 知道, 更是, 能,
+Nearest to 学生: 我们, 需要, 他们, 它, 不错, 能, 也, 讲,
+Nearest to 的: 和, ，, 。, 了, 、, 在, 很, 是,
+Nearest to .: 有趣, 但是, \, 去, 感觉, 才能, 这门, 进入,
+Nearest to “: \, 高, 丰富, 说, 英文, 数学, 要求, 黑板,
+Nearest to 中: 多, 这样, 简单, 提高, 充分, 如果, 英语, r,
+Nearest to \: r, n, 技巧, 不过, PPT, 看到, 学案, 意义,
+Nearest to 去: 而是, r, \, 实际, 最, 知道, 一次, 用来,
+Nearest to 我们: 我, 学生, 都, \, 老师, 以后, 使用, 它,
+Nearest to 教师: 这样, \, r, 活动, 不错, Webquest, 不过, 历史,
+Nearest to 更: 应用, 有趣, 看, \, n, 完成, -, 想,
+Nearest to 课堂: \, 活动, r, 简单, 不错, 地方, 技巧, 困惑,
+Nearest to webquest: \, r, 方案, 技巧, 以后, 设计, 更好, 学到,
+Average loss at step  82000 :  13.3071519852
+Average loss at step  84000 :  12.7195142322
+Average loss at step  86000 :  13.288288828
+Average loss at step  88000 :  9.89984259582
+Average loss at step  90000 :  9.39681650651
+Nearest to ，: 。, 的, 、, 和, 是, ,, 很, 也,
+Nearest to 非常: 说, 真的, 利用, 鼓励, n, 值得, 先进, r,
+Nearest to 而: 引入, 初步, 操作, 编程, r, 要求, 但是, 师范生,
+Nearest to 要: 没有, r, 会, 更是, n, 像, 能, 完善,
+Nearest to 学生: 我们, 他们, 它, 需要, 也, 能, 不错, 一个,
+Nearest to 的: 和, ，, 。, 了, 、, 在, 很, 是,
+Nearest to .: 有趣, 但是, \, 去, 进入, 才能, 感觉, 生涯,
+Nearest to “: \, 高, 丰富, 说, 黑板, 英文, 数学, 要求,
+Nearest to 中: 多, 这样, 简单, 充分, 提高, 参加, 讲授, 英语,
+Nearest to \: r, 技巧, n, 不过, PPT, 看到, 学案, 意义,
+Nearest to 去: 而是, 实际, r, 最, 用来, \, 一次, 知道,
+Nearest to 我们: 我, 学生, 都, 老师, \, 以后, 使用, 它,
+Nearest to 教师: 这样, r, \, 活动, Webquest, 不错, 历史, 心里,
+Nearest to 更: 应用, 有趣, 看, \, 完成, n, 接触, 想,
+Nearest to 课堂: 活动, \, r, 不错, 地方, 简单, 技巧, 困惑,
+Nearest to webquest: r, \, 方案, 技巧, 以后, 更好, 设计, 学到,
+Average loss at step  92000 :  8.37574272859
+Average loss at step  94000 :  9.3296070919
+Average loss at step  96000 :  8.2165058918
+Average loss at step  98000 :  12.9608105628
+Average loss at step  100000 :  7.84091955984
+Nearest to ，: 。, 、, 的, 和, 是, ,, 很, ：,
+Nearest to 非常: 说, 真的, 鼓励, 值得, n, 利用, 先进, 神奇,
+Nearest to 而: 引入, 初步, 编程, 操作, r, 要求, 师范生, 但是,
+Nearest to 要: 没有, 会, r, 能, 更是, n, 完善, excel,
+Nearest to 学生: 我们, 他们, 它, 需要, 也, 能, 一个, 自己,
+Nearest to 的: 和, ，, 。, 、, 了, 在, 很, 是,
+Nearest to .: 有趣, 但是, \, 去, 进入, 才能, r, 感觉,
+Nearest to “: \, 高, 黑板, 丰富, 说, 英文, 数学, 要求,
+Nearest to 中: 多, 这样, 充分, 简单, 提高, 参加, 讲授, 英语,
+Nearest to \: r, 技巧, n, 不过, PPT, 看到, 意义, 学案,
+Nearest to 去: 而是, 实际, r, 用来, \, 最, 一次, 后面,
+Nearest to 我们: 我, 学生, 都, 老师, \, 以后, 使用, 提出,
+Nearest to 教师: 这样, r, \, 活动, Webquest, 不错, 心里, 历史,
+Nearest to 更: 应用, 有趣, 看, \, n, 完成, 学科, 接触,
+Nearest to 课堂: 活动, \, r, 不错, 地方, 简单, 困惑, 技巧,
+Nearest to webquest: \, r, 方案, 技巧, 更好, 学到, 以后, 设计,
+
+Process finished with exit code 0

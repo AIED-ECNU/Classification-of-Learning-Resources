@@ -1,0 +1,250 @@
+学习率0.01----不好
+Data size 2423074
+Most common words (+UNK) [['UNK', 0], ('，', 187657), ('的', 183012), ('。', 78649), ('了', 43928)]
+Sample data [54, 979, 188, 3870, 872, 2, 12, 3, 23, 109] ['能', '开', '一门', '进阶', '版', '的', '课程', '。', ',', '感觉']
+979 开 -> 188 一门
+979 开 -> 54 能
+188 一门 -> 979 开
+188 一门 -> 3870 进阶
+3870 进阶 -> 188 一门
+3870 进阶 -> 872 版
+872 版 -> 3870 进阶
+872 版 -> 2 的
+2017-06-05 00:37:08.332603: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:37:08.333076: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:37:08.333476: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:37:08.333781: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:37:08.334121: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:37:08.334421: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:37:08.334721: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 00:37:08.335021: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+Initialized
+Average loss at step  0 :  220.789581299
+Nearest to 很: form, 剪贴板, 最省, 细想, 淡, 顺口溜, problems, 队伍,
+Nearest to 对于: 蛋生, 参与感, 穹顶, 相互了解, 生态圈, 出席, Scaffolding, 比光,
+Nearest to 这: 苏轼, 还悟, 人身, 处处, 文艺复兴, 选择权, Scientific, 科,
+Nearest to 软件: Review, OKCupid, 踏, 图上, 指导意义, that, 翻页, ◆,
+Nearest to 为: 毫不留情, 点头, 太新, 整段, 难多, 接军, nThe, 一读,
+Nearest to 没有: 好困, 谈何容易, 城郊, fool, 按图索骥, 略加, 影有, 沙哑,
+Nearest to 让: 交通工具, 日志, 修行, 画龙点睛, 演界网, 四肢, 需注意, 辅佐,
+Nearest to ,: 耳力, 自暴自弃, 依赖性, 傅, 涵养, 祥瑞, 从句, 啻,
+Nearest to 教师: 这篇, 报以, 很久前, 推销, 时不时, 规制, 这一自, BLABLABLA,
+Nearest to 是: 全程, 哐, 为主, 磁悬浮列车, being, 争先恐后, 大赦, 统计,
+Nearest to 学习: 搬运工, 每页, 教育局, 高阶, activities, 心不宁, 好好看, 烹饪,
+Nearest to 我们: 向外看, 表现性, 认字, 中国式, 真会, 百岁, 司马光, 希腊,
+Nearest to 了: 軟件, 能全, 课讲会, 多丑, 但边, 默契, 高兴, 美到,
+Nearest to 课堂: yifuqin, 人师, 环境因素, 构筑, 對學過, 四倍, 走遍, 一个班,
+Nearest to 制作: Inventory, 好重, 不辱使命, 地变, 不单单是, 稍显, 望文生义, 跳个,
+Nearest to 在: 0205304, 由些, 11, 其酷, 挫伤, 传色, Studio, 生产过剩,
+Average loss at step  2000 :  255.823839722
+Average loss at step  4000 :  225.45771801
+Average loss at step  6000 :  203.395262596
+Average loss at step  8000 :  185.499076935
+Average loss at step  10000 :  175.045853821
+Nearest to 很: 。, 的, ，, \, ,, 是, 有, r,
+Nearest to 对于: 蛋生, ,, 的, 还是, n, 。, 相互了解, 啊呀,
+Nearest to 这: 的, ，, 也, 。, 我, \, -, 选择权,
+Nearest to 软件: OKCupid, Review, 踏, 图上, 指导意义, ◆, 翻页, 坦白讲,
+Nearest to 为: 点头, 毫不留情, nThe, Sony, 堆砌, 接军, 维克, 太新,
+Nearest to 没有: 的, ,, ，, 了, n, 是, r, 中,
+Nearest to 让: 上, 课程, 时所犯, ，, 演界网, 四肢, 交通工具, 修行,
+Nearest to ,: 的, ，, 。, \, 了, r, 很, n,
+Nearest to 教师: 这篇, 报以, 很久前, 时不时, 推销, 这一自, BLABLABLA, 规制,
+Nearest to 是: ，, 的, \, 。, 了, 很, ,, r,
+Nearest to 学习: 的, 。, ，, 是, \, 了, 很, 我,
+Nearest to 我们: 。, 但, 是, 这门, 希腊, 我, n, 了,
+Nearest to 了: 。, 的, ，, \, 是, r, ,, n,
+Nearest to 课堂: yifuqin, 环境因素, 對學過, 人师, 四倍, least, 一个班, 构筑,
+Nearest to 制作: Inventory, 好重, 不辱使命, 地变, 视频, 别调, 稍显, 课件,
+Nearest to 在: 的, 。, ，, \, 课程, r, 了, 我,
+Average loss at step  12000 :  165.48055032
+Average loss at step  14000 :  149.241599174
+Average loss at step  16000 :  136.358437342
+Average loss at step  18000 :  127.948770412
+Average loss at step  20000 :  118.965482065
+Nearest to 很: 。, 的, ，, 是, 有, 我, 了, 学习,
+Nearest to 对于: 的, 。, ,, 在, ，, 我, 还是, n,
+Nearest to 这: 的, ，, 。, 我, 也, 在, 了, 我们,
+Nearest to 软件: 的, 了, 。, ,, 在, ，, 有, r,
+Nearest to 为: 在, 和, 、, 。, 是, 了, ，, r,
+Nearest to 没有: 的, 中, 了, 是, ，, 我们, ,, 。,
+Nearest to 让: ，, 的, 是, 我, 。, 在, 课程, 上,
+Nearest to ,: 的, 。, ，, 了, 我, \, 在, 是,
+Nearest to 教师: 课, 我, 中, 自己, 对, 就, 不, 了,
+Nearest to 是: ，, 。, 的, 了, \, 学习, 我们, 我,
+Nearest to 学习: 的, 。, ，, 是, 我, 了, 在, \,
+Nearest to 我们: 。, 是, 的, 我, ，, 了, 在, 学习,
+Nearest to 了: 。, 的, ，, 是, \, 我, 在, 学习,
+Nearest to 课堂: 但, ,, 我, ，, 就, 有, 课程, 也,
+Nearest to 制作: 的, 是, 。, 我, ，, 一些, 很, 了,
+Nearest to 在: 的, 。, ，, 我, 了, 是, 学习, 我们,
+Average loss at step  22000 :  124.889485809
+Average loss at step  24000 :  102.645907284
+Average loss at step  26000 :  98.3699440994
+Average loss at step  28000 :  91.0366189947
+Average loss at step  30000 :  86.5727210083
+Nearest to 很: 。, 是, 的, 学习, 有, 我, ，, 了,
+Nearest to 对于: 的, 。, 在, 我, ,, 、, ，, 了,
+Nearest to 这: 我, 。, 的, ，, 也, 在, 我们, 了,
+Nearest to 软件: 了, 在, 。, 的, 有, 是, 我们, 上,
+Nearest to 为: 在, 和, 、, 教学, 是, 了, 。, 对,
+Nearest to 没有: 中, 我们, 了, 是, 的, 我, ，, 。,
+Nearest to 让: ，, 是, 我, 在, 。, 的, 我们, 上,
+Nearest to ,: 。, 的, ，, 了, 我, 、, 我们, 在,
+Nearest to 教师: 我, 中, 课, 学生, 自己, 在, 对, 我们,
+Nearest to 是: ，, 了, 。, 的, 学习, 我们, 在, 我,
+Nearest to 学习: 。, 我, 是, 的, 了, ，, 在, 教学,
+Nearest to 我们: 。, 我, 是, 了, 在, 的, ，, 学习,
+Nearest to 了: 。, 的, 是, ，, 在, 我, 学习, 我们,
+Nearest to 课堂: 我, ,, ，, 但, 有, 学生, 就, 也,
+Nearest to 制作: 的, 是, 我, 教学, 。, webquest, 我们, 在,
+Nearest to 在: 的, 。, ，, 我, 了, 是, 学习, 我们,
+Average loss at step  32000 :  82.8829916668
+Average loss at step  34000 :  79.3703468208
+Average loss at step  36000 :  74.9132200718
+Average loss at step  38000 :  73.2401656437
+Average loss at step  40000 :  84.9350340843
+Nearest to 很: 。, 学习, 是, 有, 我, 在, 了, 我们,
+Nearest to 对于: 在, 。, 的, 我, 、, ,, 教学, 设计,
+Nearest to 这: 我, 也, 。, 在, 我们, 的, ，, 、,
+Nearest to 软件: 在, 了, 我们, 有, 学生, 是, 上, 课,
+Nearest to 为: 在, 和, 、, 教学, 是, 设计, 对, 自己,
+Nearest to 没有: 中, 我们, 了, 是, 我, 在, 的, 对,
+Nearest to 让: 是, 我, 在, ，, 课程, 。, 上, 我们,
+Nearest to ,: 。, 了, 我, 的, 教学, 、, 我们, ，,
+Nearest to 教师: 我, 中, 课, 学生, 自己, 我们, 对, 在,
+Nearest to 是: 了, 。, ，, 学习, 我们, 的, 在, 我,
+Nearest to 学习: 我, 是, 。, 教学, 了, 在, 我们, 的,
+Nearest to 我们: 。, 我, 是, 在, 了, 学习, 的, 和,
+Nearest to 了: 。, 是, 的, ，, 在, 学习, 我, 我们,
+Nearest to 课堂: 我, 有, ,, 学生, 也, 学习, 但, 课程,
+Nearest to 制作: 是, 教学, 我, 的, 学习, 我们, 在, 。,
+Nearest to 在: 。, 的, 我, ，, 了, 是, 学习, 我们,
+Average loss at step  42000 :  80.7886449405
+Average loss at step  44000 :  77.8977124515
+Average loss at step  46000 :  73.8036038077
+Average loss at step  48000 :  74.7759739504
+Average loss at step  50000 :  64.2015787783
+Nearest to 很: 。, 有, 学习, 是, 我, 在, 课, 我们,
+Nearest to 对于: 在, ,, 。, 我, 、, 还是, n, 的,
+Nearest to 这: 我, 也, 在, 我们, 。, 、, 了, 是,
+Nearest to 软件: 在, 了, 上, 课, ,, 有, r, 学生,
+Nearest to 为: 在, 和, 、, 教学, r, 对, 设计, 是,
+Nearest to 没有: 中, 我们, 是, 了, ,, 我, 这门, 对,
+Nearest to 让: 是, 我, 在, 上, 课程, 我们, 也, 学习,
+Nearest to ,: 。, 了, 我, \, 在, 教学, 、, 我们,
+Nearest to 教师: 课, 中, 学生, 我, 对, 自己, 我们, 在,
+Nearest to 是: 了, 。, 学习, 我们, ，, \, 在, 我,
+Nearest to 学习: 我, 是, 教学, 在, 。, 了, 我们, 也,
+Nearest to 我们: 我, 是, 。, 在, 学习, 了, 这门, 和,
+Nearest to 了: 是, 。, 在, 学习, 的, 我, 我们, \,
+Nearest to 课堂: 我, ,, 但, 有, 学生, 就, 课程, 也,
+Nearest to 制作: 是, 教学, 我, 学习, 我们, 一些, 很, 在,
+Nearest to 在: 。, 我, 的, 了, 是, 学习, 我们, 和,
+Average loss at step  52000 :  60.3985465479
+Average loss at step  54000 :  55.5429075575
+Average loss at step  56000 :  55.5659652405
+Average loss at step  58000 :  52.0168786063
+Average loss at step  60000 :  66.9761447735
+Nearest to 很: 有, 学习, 是, 我, 。, 课, 在, 我们,
+Nearest to 对于: 在, ,, 我, 、, 。, 还是, 设计, 教学,
+Nearest to 这: 我, 也, 在, 我们, 、, 。, 学习, 有,
+Nearest to 软件: 在, 上, 课, 学生, 有, ,, 设计, 我们,
+Nearest to 为: 在, 和, 、, 教学, 对, 设计, r, 自己,
+Nearest to 没有: 中, 我们, 是, ,, 了, 我, 这门, 对,
+Nearest to 让: 是, 在, 我, 上, 课程, 也, 我们, 学习,
+Nearest to ,: 了, 我, \, 教学, 、, 。, 我们, 在,
+Nearest to 教师: 课, 中, 学生, 对, 自己, 我, 就, 我们,
+Nearest to 是: 了, 学习, 我们, 。, 在, \, 我, 老师,
+Nearest to 学习: 我, 是, 教学, 在, 我们, 了, 学生, 也,
+Nearest to 我们: 我, 是, 在, 学习, 。, 了, 这门, 和,
+Nearest to 了: 是, 。, 在, 学习, 我们, 我, \, 也,
+Nearest to 课堂: ,, 我, 但, 学生, 有, 就, 也, 课程,
+Nearest to 制作: 是, 教学, 我, 学习, 一些, webquest, 我们, 很,
+Nearest to 在: 我, 。, 学习, 我们, 是, 了, 和, 的,
+Average loss at step  62000 :  46.7116108007
+Average loss at step  64000 :  47.6216482844
+Average loss at step  66000 :  44.6153664031
+Average loss at step  68000 :  44.0172504191
+Average loss at step  70000 :  43.8505007081
+Nearest to 很: 有, 学习, 是, 我, 课, 我们, 在, \,
+Nearest to 对于: 在, ,, 我, 、, 还是, 设计, 教学, \,
+Nearest to 这: 我, 也, 在, 我们, 、, 中, 学习, 教学,
+Nearest to 软件: 上, 设计, 学生, 在, 课, 有, ,, 这门,
+Nearest to 为: 在, 教学, 和, 设计, 、, 对, 自己, \,
+Nearest to 没有: 中, 我们, 是, ,, 这门, 对, 一些, 上,
+Nearest to 让: 上, 是, 在, 我, 课程, 也, 我们, 学习,
+Nearest to ,: \, 教学, 我, 、, 了, 我们, 在, 很,
+Nearest to 教师: 课, 学生, 中, 对, 自己, 就, 我, 我们,
+Nearest to 是: 了, 学习, 我们, 在, \, 。, 老师, 我,
+Nearest to 学习: 教学, 我, 是, 在, 我们, 学生, 了, 老师,
+Nearest to 我们: 我, 是, 在, 学习, 了, 这门, 。, 教学,
+Nearest to 了: 是, 。, 在, 学习, 我们, 我, 也, \,
+Nearest to 课堂: ,, 但, 我, 学生, 有, 就, 设计, 也,
+Nearest to 制作: 教学, 是, webquest, 一些, 学习, 我, 我们, 很,
+Nearest to 在: 我, 。, 学习, 我们, 是, 和, 了, 也,
+Average loss at step  72000 :  42.9957293606
+Average loss at step  74000 :  41.6487842751
+Average loss at step  76000 :  43.343181078
+Average loss at step  78000 :  54.9689166402
+Average loss at step  80000 :  52.883806114
+Nearest to 很: 有, 学习, 是, 课, 我, 我们, 在, \,
+Nearest to 对于: 在, ,, 我, 还是, 设计, 、, 教学, n,
+Nearest to 这: 我, 也, 在, 我们, 、, 中, 教学, 学习,
+Nearest to 软件: 设计, 上, 学生, 课, 在, 有, 这门, ,,
+Nearest to 为: 设计, 在, 教学, 对, 和, 、, r, 自己,
+Nearest to 没有: 中, 我们, ,, 一些, 这门, 是, 上, 对,
+Nearest to 让: 上, 是, 在, 我, 课程, 也, 我们, 学习,
+Nearest to ,: \, 教学, 我, 、, 我们, 还是, 了, 在,
+Nearest to 教师: 课, 学生, 中, 对, 自己, 就, 不, 我们,
+Nearest to 是: 了, 学习, 我们, 在, \, 老师, 也, 我,
+Nearest to 学习: 教学, 我, 是, 我们, 在, 学生, 也, 老师,
+Nearest to 我们: 我, 是, 学习, 在, 这门, 了, 教学, 可以,
+Nearest to 了: 是, 。, 在, 学习, 我们, 我, 也, \,
+Nearest to 课堂: 但, ,, 学生, 我, 有, 就, 设计, 也,
+Nearest to 制作: 教学, webquest, 一些, 是, 学习, 我们, 我, 很,
+Nearest to 在: 我, 学习, 我们, 和, 是, 。, 了, 也,
+Average loss at step  82000 :  51.7478526359
+Average loss at step  84000 :  49.4566225237
+Average loss at step  86000 :  51.1649842401
+Average loss at step  88000 :  41.6570194063
+Average loss at step  90000 :  38.8124685259
+Nearest to 很: 有, 学习, 课, 是, 我, 我们, \, 也,
+Nearest to 对于: 在, ,, 还是, 设计, 我, 、, n, 教学,
+Nearest to 这: 也, 我, 我们, 在, 中, 、, 教学, 学习,
+Nearest to 软件: 设计, 上, 学生, 课, r, 这门, 有, ,,
+Nearest to 为: 设计, 教学, 对, 在, r, 和, 、, \,
+Nearest to 没有: 中, 我们, 一些, 这门, ,, 上, 对, 还是,
+Nearest to 让: 上, 在, 课程, 是, 我, 也, 学生, 我们,
+Nearest to ,: \, 教学, 还是, 我, 我们, 、, 一个, 在,
+Nearest to 教师: 课, 学生, 中, 对, 自己, 就, 不, 能,
+Nearest to 是: 了, 学习, 我们, 在, \, 老师, 也, 我,
+Nearest to 学习: 教学, 我, 是, 我们, 在, 学生, 老师, 也,
+Nearest to 我们: 我, 是, 学习, 在, 这门, 教学, 可以, 有,
+Nearest to 了: 是, 在, 。, 学习, 我们, 也, 我, \,
+Nearest to 课堂: 但, ,, 学生, 设计, 我, 就, 有, 中,
+Nearest to 制作: 教学, webquest, 一些, 学习, 是, 我们, 我, 更,
+Nearest to 在: 我, 学习, 我们, 和, 是, 上, 课, 也,
+Average loss at step  92000 :  35.6289396996
+Average loss at step  94000 :  37.0699467545
+Average loss at step  96000 :  34.43296702
+Average loss at step  98000 :  48.9815984659
+Average loss at step  100000 :  32.730199559
+Nearest to 很: 有, 学习, 课, 是, 我, \, 我们, 也,
+Nearest to 对于: 在, ,, 还是, 设计, 我, n, 、, \,
+Nearest to 这: 也, 我, 我们, 在, 中, \, 教学, 学习,
+Nearest to 软件: 设计, 上, 学生, 课, r, 这门, ,, 有,
+Nearest to 为: 设计, 对, 教学, r, 在, \, 这门, 自己,
+Nearest to 没有: 中, 我们, 一些, 这门, ,, 还是, 上, 对,
+Nearest to 让: 上, 课程, 在, 我, 也, 是, 学生, 到,
+Nearest to ,: \, 教学, 还是, 我们, 我, 一个, 、, 很,
+Nearest to 教师: 课, 学生, 中, 对, 自己, 就, 不, 能,
+Nearest to 是: 了, 学习, 我们, \, 在, 老师, 也, 我,
+Nearest to 学习: 教学, 我, 我们, 是, 学生, 在, 老师, 也,
+Nearest to 我们: 我, 学习, 是, 在, 这门, 可以, 教学, 有,
+Nearest to 了: 是, 在, 学习, 我们, 也, 我, 。, \,
+Nearest to 课堂: 但, ,, 学生, 设计, 就, 有, 我, 会,
+Nearest to 制作: webquest, 教学, 一些, 学习, 更, 视频, 我们, 是,
+Nearest to 在: 我, 学习, 我们, 和, 上, 课, 也, 课程,
+
+Process finished with exit code 0

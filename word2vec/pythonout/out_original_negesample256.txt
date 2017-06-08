@@ -1,0 +1,235 @@
+很差
+
+D:\Python\Anaconda3\pkgs\python-3.5.3-0\python.exe D:/Python/learn/tensorflow-master/tensorflow/examples/tutorials/word2vec/word2vec_adjust.py
+Data size 2423074
+Most common words (+UNK) [['UNK', 0], ('，', 187657), ('的', 183012), ('。', 78649), ('了', 43928)]
+Sample data [54, 980, 188, 3920, 872, 2, 12, 3, 23, 109] ['能', '开', '一门', '进阶', '版', '的', '课程', '。', ',', '感觉']
+980 开 -> 54 能
+980 开 -> 188 一门
+188 一门 -> 3920 进阶
+188 一门 -> 980 开
+3920 进阶 -> 872 版
+3920 进阶 -> 188 一门
+872 版 -> 3920 进阶
+872 版 -> 2 的
+2017-06-05 01:03:29.277786: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 01:03:29.278118: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 01:03:29.278434: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 01:03:29.278746: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 01:03:29.279057: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 01:03:29.279377: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 01:03:29.280603: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-06-05 01:03:29.280930: W c:\tf_jenkins\home\workspace\release-win\device\cpu\os\windows\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+Initialized
+Average loss at step  0 :  962.375183105
+Nearest to 东西: 横亘, 以下几点, 多名, 鼓舞人心, 过渡阶段, 他亲, 数学原理, 大力推广,
+Nearest to 还: 来讲, 季羡林, 哪题, 投资规模, 您们, 很易, 六项, 圣地牙哥,
+Nearest to 和: 帮主, 追根究底, OF, 完成, serious, _____, 要学点, 5204475,
+Nearest to 了解: 咋样, 声学, 耕耘, 每关, 跃齐, 已远超, 匹敌, 进好,
+Nearest to 等: 裁判, 痛楚, 最好, 数好, 淳淳, 温故而知新, 第二条, 会时常,
+Nearest to webquest: 朋交而, 咬, 觉厉, 焦虑症, 急诊, 欧丽娟, access, 接触面,
+Nearest to 有: 衣装, 前沿, 更该, 一些, 扫描, 并非如此, 调查结果, 一岁,
+Nearest to 的: 手足无措, 团日, 炭笔, 充裕, 身上, WIN8, 闻所未闻, 举证,
+Nearest to 通过: 医疗, 陈越, 有空, 00823005, 不听话, 自主权, 能动性, 工厂,
+Nearest to ~: 偶在, 但学少, QQ号, 奇佳, 不仅, 制造者, 总览, 杂乱不堪,
+Nearest to 六周: 不课, 想尽, 大大降低, 方差, decrypt, 来临, Critical, 效能,
+Nearest to PPT: 陈茵, Office2003, community, Solvency, 擴展, 背篓, 比利时, 看不清,
+Nearest to 为: 生效, 触球, head, 丑恶, 越迈, 意会, 多米诺骨牌, 眼光,
+Nearest to 这门: 选文, 其乐融融, 师者, 午饭时间, 天底下, Du, 一星, 别出心裁,
+Nearest to 虽然: 作业负担, 指南针, 地理, 奇怪的是, 科学依据, 割舍, 改善生活, 山里,
+Nearest to 过程: 魔咒, Epals, 时事政治, 曲解, 现等, philosopher, WEB2, 同理,
+Average loss at step  2000 :  180.936346077
+Average loss at step  4000 :  39.0714264141
+Average loss at step  6000 :  22.5349582628
+Average loss at step  8000 :  108.816725719
+Average loss at step  10000 :  42.6017119421
+Nearest to 东西: 鼓舞人心, 蒙特卡罗, 过渡阶段, 体, 懂, 后求, 时候, 云蒸霞蔚,
+Nearest to 还: 也, 还是, 都, 就, 会, 我们, 你, 并,
+Nearest to 和: 、, 的, 是, ，, 。, 在, 也, 都,
+Nearest to 了解: 说, 上, 做, 看, 声学, 知道, 学习, 咋样,
+Nearest to 等: 裁判, 置身于, u2b, 最好, Reason, 汪洋大海, 各异, 温故而知新,
+Nearest to webquest: 朋交而, 咬, 欧丽娟, access, 【, 焦虑症, 觉厉, well,
+Nearest to 有: 是, 。, ，, 了, 的, 可以, 我, 也,
+Nearest to 的: 。, ，, 了, 是, 在, 和, 、, 有,
+Nearest to 通过: 更贵, 讲错, sell, 真值, 个字符, Foundation, 噎着, Press,
+Nearest to ~: n, 课程, 见谅, 同伴, c++, 啦, 真值, 好好,
+Nearest to 六周: 不课, 蓝图, 大大降低, 来临, 效能, 方差, Critical, decrypt,
+Nearest to PPT: community, 然后, 看不清, 已近尾声, THESIS, sdk, 多言, 没长,
+Nearest to 为: 就, 意会, 亲们, 脑中, 算了, 凶杀, 蕾, 露面,
+Nearest to 这门: 理智, 课程, 我, 随意性, \, 稍显, 吧, n,
+Nearest to 虽然: 但是, ~, 你, 课程, 改善生活, Resource, 宽限, 泪目,
+Nearest to 过程: 魔咒, 现等, 曲解, 同理, philosopher, 形单影只, 两样, 补益,
+Average loss at step  12000 :  21.5692419858
+Average loss at step  14000 :  16.0306317236
+Average loss at step  16000 :  13.5751123779
+Average loss at step  18000 :  12.6550188043
+Average loss at step  20000 :  12.0241461599
+Nearest to 东西: 时候, 问题, 用到, 收获, 我们, 内容, 需要, 技术,
+Nearest to 还: 也, 还是, 就, 都, ，, 再, 我, 不是,
+Nearest to 和: 、, 的, 与, ，, 来, 。, 以及, 去,
+Nearest to 了解: 知道, 学习, 做, 说, 看, 感觉, 上, 学会,
+Nearest to 等: 、, 和, 的, 用, 与, 对, 也, 制作,
+Nearest to webquest: 我们, 在, 老师, 是, 教学, 这种, ，, 大家,
+Nearest to 有: 是, 的, ，, 还是, 。, 也, 可以, 我,
+Nearest to 的: 和, ，, 与, 。, 、, 在, 了, ,,
+Nearest to 通过: 在, 对, 作为, 。, 也, 对于, 课程, ~,
+Nearest to ~: ！, 。, ，, ；, n, 会, 在, 课程,
+Nearest to 六周: 现在, 课程, n, 用, 学, 就是, 只是, 学习,
+Nearest to PPT: ppt, 知识, 视频, 开始, 制作, 技术, 软件, 生活,
+Nearest to 为: 与, 对, 也, 的, 就, 在, 给, 让,
+Nearest to 这门: 这个, 我, 在, 。, ”, 自己, 但是, 对,
+Nearest to 虽然: 但是, 从, 但, 了, 其实, 在, 你, 而且,
+Nearest to 过程: 生活, 课程, 去, 在, ~, 课, 主题, 软件,
+Average loss at step  22000 :  16.2659048092
+Average loss at step  24000 :  8.93332299304
+Average loss at step  26000 :  8.95387916398
+Average loss at step  28000 :  8.60753731537
+Average loss at step  30000 :  8.57756775939
+Nearest to 东西: 时候, 问题, 内容, 用到, 收获, 技术, 软件, 我们,
+Nearest to 还: 也, 还是, 就, 并, 再, 真的, 我, 都,
+Nearest to 和: 与, 的, 、, 以及, 来, 进行, 去, 。,
+Nearest to 了解: 学会, 掌握, 知道, 学习, 看, 对, 内容, 做,
+Nearest to 等: 和, 的, ）, 用, 这些, 、, 以及, 与,
+Nearest to webquest: 教学, 我们, 老师, 信息化, ppt, 课程, 我, 视频,
+Nearest to 有: 提供, 的, 是, 还是, 不是, 也, 以及, 我,
+Nearest to 的: 和, 与, ，, 。, 了, 对, 以及, ,,
+Nearest to 通过: 在, 作为, 对于, 对, 因为, 这, 从, 不仅,
+Nearest to ~: ！, n, 见谅, pH, 。, 三样, 微酸, 斑,
+Nearest to 六周: 课程, 现在, n, 机会, 时间, 学习, 用心, 可能,
+Nearest to PPT: ppt, 知识, 视频, 软件, word, 生活, 技术, webquest,
+Nearest to 为: 对, 让, 与, 的, 给, 对于, 就, 也,
+Nearest to 这门: 这个, 我, 这次, 所以, 在, n, 。, 但是,
+Nearest to 虽然: 但是, 其实, 但, 而且, 从, 所以, 就, 因为,
+Nearest to 过程: 生活, 课程, 主题, 工作, 活动, 去, 软件, 内容,
+Average loss at step  32000 :  8.2671009295
+Average loss at step  34000 :  8.53103783298
+Average loss at step  36000 :  7.99566378391
+Average loss at step  38000 :  7.84507792294
+Average loss at step  40000 :  9.00650433004
+Nearest to 东西: 时候, 问题, 用到, 内容, 技术, 软件, 收获, 人,
+Nearest to 还: 也, 还是, 并, 不仅, 就, 向, 再, 都,
+Nearest to 和: 与, 、, 的, 以及, 进行, 来, 去, 对,
+Nearest to 了解: 掌握, 学会, 学习, 知道, 理解, 认识, 运用, 应用,
+Nearest to 等: 和, 、, ）, 置身于, 的, 以及, 这些, （,
+Nearest to webquest: 信息化, ppt, Webquest, 课程, 教案, 教学, 我们, 视频,
+Nearest to 有: 提供, 是, 得到, ，, 不是, 有些, 没有, 还有,
+Nearest to 的: 和, 与, 了, 以及, 、, 在, 所, 对,
+Nearest to 通过: 在, 作为, 对于, 对, 课程, ,, 经过, 因为,
+Nearest to ~: 。, n, ！, ,, ；, 啊, ）, 很,
+Nearest to 六周: 课程, 机会, n, 学期, 现在, 时间, 到底, 用心,
+Nearest to PPT: ppt, word, 视频, 软件, webquest, 知识, 多媒体, 制作,
+Nearest to 为: 让, 对, 的, 与, 给, 使, 在, 对于,
+Nearest to 这门: 这个, 这次, 我, 信息化, 所以, 但是, webquist, 虽然,
+Nearest to 虽然: 但是, 其实, 而且, 但, 如果, 因为, 所以, 在,
+Nearest to 过程: 生活, 课程, 工作, 主题, 活动, 软件, 去, 任务,
+Average loss at step  42000 :  18.7639324369
+Average loss at step  44000 :  12.5625292397
+Average loss at step  46000 :  101744.037275
+Average loss at step  48000 :  945283.144652
+Average loss at step  50000 :  21567900.2319
+Nearest to 东西: 内容, 功能, 时候, 形式, 具体, 教学方式, 最大, office,
+Nearest to 还: 而且, 首先, 了, 可是, 也, 尤其, 如果, 所以,
+Nearest to 和: 多变, 崛起, 热烈, 什么样, 杀, 一刻, 使人, facebook,
+Nearest to 了解: 参差不齐, 大楼, 好好, 相匹配, 教, 难以置信, 随着, 有过,
+Nearest to 等: publisher, 更, 为了, 面子, 先, 其次, 机子, 跟着,
+Nearest to webquest: 新, 不足, 传统, 思考, 学, 新型, 六周, 广阔,
+Nearest to 有: 及时, 仍会, 深感, 响, 海涵, 提供, 做, 简到繁,
+Nearest to 的: 第一次, 赚, 负面, 这笔, 从而, 侧重点, 使人, 按照,
+Nearest to 通过: 比如, 但, 这, 嫉妒, 一点点, 等, 并, 为,
+Nearest to ~: 急救, 符合, 摸索, 情感, 给予, 收到, 上网, google,
+Nearest to 六周: 时代, 应用, webquest, 专业, 工作, 优秀, 学生, 远程,
+Nearest to PPT: 很大, 研究, 课堂, 开展, 实用性, 地方, 句子, 形式,
+Nearest to 为: 来说, 原来, 比如, 一点点, 来, 为了, 呢, 有点,
+Nearest to 这门: 现代, 这节, 不但, 第一节, 今天, 事情, 技术培训, 有着,
+Nearest to 虽然: 每周五, 第一次, 而, 不要, 本职工作, facebook, 的, 改为,
+Nearest to 过程: 作品, 简单, 发展, 信息, 制作, 所学, 工具, ppt,
+Average loss at step  52000 :  1389431488.89
+Average loss at step  54000 :  16995720061.2
+Average loss at step  56000 :  199966471609.0
+Average loss at step  58000 :  1.3885836953e+12
+Average loss at step  60000 :  1.30702659586e+13
+Nearest to 东西: 工具, 认真, 作品, 发展, 这样, 任务, 声音, 节奏,
+Nearest to 还: 配备, 完全, 脑筋, 对, 之前, 当真, 创新型, 共有,
+Nearest to 和: 最为, 调查, 胡同, 定, 过会, 与, 校园内, 清晰明确,
+Nearest to 了解: 却, 提高, 概念, 感触, 环境, 上, 项目, 展示,
+Nearest to 等: 最有, 起先, 涉猎, 第二周, 现状, 理解能力, 好似, 坚强,
+Nearest to webquest: 将来, 学校, 课题, 理念, 深刻, 于是, 不足, 丰富,
+Nearest to 有: 诗歌, 表达方式, 很多, 之际, 很, 给, 坚强, 知,
+Nearest to 的: 预览, 减轻, 计算机软件, 表达方式, 各有, 诗歌, 闪光, 先前,
+Nearest to 通过: 因为, 相信, 况且, 并且, 太紧张, 导航, 但, 用,
+Nearest to ~: 闪光, 劳动成果, 一题, 人文精神, 预览, 的, ..., 兽,
+Nearest to 六周: 音乐, 探究, 出来, 重要, 完整, 今后, 美丽, 信息技术,
+Nearest to PPT: 视频, 积极性, 方法, 分享, 提高, 环境, 短, 过,
+Nearest to 为: 让, 就, 使, 觉得, 但是, 体验, 才, 把,
+Nearest to 这门: 这个, 这, 这节, 但是, 这堂, 一, 因为, 还是,
+Nearest to 虽然: 弱智, 网络资源, 针对, 者, 增强, 受益匪浅, 敷衍了事, 这笔,
+Nearest to 过程: 设计, 绘画, 今后, 纠结, 自由, 使用, 生涯, 另,
+Average loss at step  62000 :  8.86632355793e+13
+Average loss at step  64000 :  7.24738205507e+14
+Average loss at step  66000 :  2.17540403488e+15
+Average loss at step  68000 :  1.12201693692e+16
+Average loss at step  70000 :  3.21699443931e+16
+Nearest to 东西: 矫正, 电脑网络, Ｏ, 不多, 不厌其烦, 分明, 动画, 出好,
+Nearest to 还: 还是, 使得, 出乎, 只要, 新课程, 图网, 带给, 能够,
+Nearest to 和: 主观, 再有, 、, 代课老师, 在建, 在生活中, ｅ, 新浪,
+Nearest to 了解: 勾起, 360doc, 学会, 结束, 错过, 联系方式, 收获, 许多,
+Nearest to 等: 矣, 词达, 300, 基础薄弱, 呆板, 点睛之笔, 收藏, 审美,
+Nearest to webquest: 支持者, wiki, 合作, 另一面, 重点中学, 主角, 委员, 敬畏,
+Nearest to 有: 但凡, 安宁, flv, 成正比, 转码, 偏远, 多, 个体差异,
+Nearest to 的: 特定, 音, 脚本, 最最, 画作, ∩, 不久, 意想不到,
+Nearest to 通过: 打上去, 从何说起, 安慰, 因为, 良师, 经过, 心路历程, 其次,
+Nearest to ~: 虽少, 尾声, Webquet, 吃, 没事, 非, 不怕, 美剧,
+Nearest to 六周: 千古, 便会, 确是, 终将, 一小, 闪, 备好, 顾虑,
+Nearest to PPT: 城乡, 青春, 石头, 态度, 州立大学, office200, 能力, 繁杂,
+Nearest to 为: 还, 将, 还是, 带给, 使得, ~, 对, 把,
+Nearest to 这门: 微, 这节, 另外, 成长, 不止, 微型, 广袤, 就,
+Nearest to 虽然: 避开, 最后, 匆忙, 在, 初看, 首先, 不断前进, 不已,
+Nearest to 过程: 作业, Word, 平台, 课堂, ppt, 内容, 教学内容, 0,
+Average loss at step  72000 :  1.1755334721e+17
+Average loss at step  74000 :  4.12920052946e+17
+Average loss at step  76000 :  2.21792829835e+18
+Average loss at step  78000 :  5.46928499311e+18
+Average loss at step  80000 :  9.53452163973e+20
+Nearest to 东西: 形式, 讨论区, 继续, 解释, 受益匪浅, 完全, 通过, 各自,
+Nearest to 还: 清华, 加油, 好, 风格, 经典, 被, 看到, 于,
+Nearest to 和: 鸡, 旅程, 地道, n4, 拜倒, 久远, 遂, 公式,
+Nearest to 了解: 困难, 准备, 得过且过, 本人, 嗖, 网上, 设立, 玩游戏,
+Nearest to 等: 可持续性, 累赘, 刷课, 赶上, 评论, 需要, 古代, 方案设计,
+Nearest to webquest: 教学模式, 自我, 虚心, 课堂教学, 拉长, Point, 用场, 不尽然,
+Nearest to 有: 效果, 上点, 质量, 不大, 学到, 这么久, 复习, 强,
+Nearest to 的: 开始, 数学计算, 比如, 能力, ted, 遗传, 抽个, 在线,
+Nearest to 通过: 港中大, 不能, 继续, 浏览器, 以上, 图, 起来, 能够,
+Nearest to ~: 较为, 写出, 不光, 不由自主, 四舍五入, 棒, 温故知新, 相似,
+Nearest to 六周: 段, 深深, 力量, 拼, 普世, 热烈, 繁华, 写作方法,
+Nearest to PPT: 后半段, 那么, 使, English, 拿证, 不好玩, 那样, 评分,
+Nearest to 为: 从, 一两本, CET, 高难度, 有学, 一样, 趁现在, 由于,
+Nearest to 这门: 当时, 太短, 一节, 人员, 产品设计, 规律, 台大, 慢,
+Nearest to 虽然: 良多, 酱油, 不够, 题目, 周是, 层次, 词汇, 下载,
+Nearest to 过程: 啥, 的确, 抽丝剥茧, ·, 生活, 加上, 本质, 有效,
+Average loss at step  82000 :  5.75960135124e+22
+Average loss at step  84000 :  3.9866187961e+23
+Average loss at step  86000 :  3.67866130682e+23
+Average loss at step  88000 :  8.57972294604e+23
+Average loss at step  90000 :  1.77851886765e+24
+Nearest to 东西: 更多更好, 工具, 免疫能力, 良苦用心, 作品, 实用, 海量, 人性化,
+Nearest to 还: 最, 应该, 可以, 有过, 还是, 回事, 学等, 学多练,
+Nearest to 和: 任, 顺畅, 具有, 不利于, 起到, 连年, 之, 起,
+Nearest to 了解: 接触, baihui, 感受, 下, 认识, 教, 看, 明白,
+Nearest to 等: 不美观, 中得, 新课改, 而, 周全, 以及, 依赖, 打开方式,
+Nearest to webquest: 画画, problems, 精巧, 类人, Yale, 我心, 适于, T恤,
+Nearest to 有: 还是, 渔人, 看得人, 常德市, 武陵, 籍贯, 晋孝武帝, 湖南省,
+Nearest to 的: 平日, 广泛应用, WEBQUEST, 和, 几句, 很会, 学后, 可贵,
+Nearest to 通过: 获益匪浅, 此外, 个人主页, 当, 但是, 钦佩, 教学信息, 其次,
+Nearest to ~: 加工, 畅快, 海底, Flash, 选修, SO, l, 我敢,
+Nearest to 六周: 形式, 大, 会开, 步伐, 精彩, 思想, 之类, 日子,
+Nearest to PPT: 社会, 熟练, 项目, 这样, 神奇, 熟悉, 学前, 认真,
+Nearest to 为: 从, 经常, 希望, 发现, 还, 才, 起来, 将,
+Nearest to 这门: 这个, 这堂, 安排, 六次, 之后, 好得多, 这种, 第一门,
+Nearest to 虽然: 在, 等等, 总之, 之一, 而且, 作为, 但, 所以,
+Nearest to 过程: 想要, 方法, 课件, 生活, 周, 独, 工作, 作用,
+Average loss at step  92000 :  7.08581247831e+24
+Average loss at step  94000 :  2.16966785415e+25
+Average loss at step  96000 :  8.10471502242e+25
+Average loss at step  98000 :  4.22989041113e+26
+
+Process finished with exit code 1
